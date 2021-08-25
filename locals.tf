@@ -102,14 +102,14 @@ locals {
     },
   var.auth_settings)
 
-  auth_settings_active_directory = merge(
+  /* auth_settings_active_directory = merge(
     {
       client_id         = null
       client_secret     = null
       allowed_audiences = []
     },
   local.auth_settings.active_directory == null ? local.auth_settings_ad_default : var.auth_settings.active_directory)
-
+ */
   auth_settings_ad_default = {
     client_id         = null
     client_secret     = null
