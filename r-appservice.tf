@@ -74,7 +74,7 @@ resource "azurerm_app_service" "app_service" {
       }
     } */
     dynamic "active_directory" {
-      for_each = local.auth_settings_active_directory.client_id == null ? [] : local.auth_settings_active_directory
+      for_each = var.auth_settings.active_directory
       content {
         client_id         = active_directory.value.client_id
         client_secret     = active_directory.value.client_secret
