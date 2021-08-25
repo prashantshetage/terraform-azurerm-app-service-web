@@ -221,7 +221,7 @@ variable "auth_settings" {
 
 variable "active_directory" {
   description = "Authentication settings. Azure AD credentials"
-  type        = any
+  type        = map
   default     = {}
 }
 
