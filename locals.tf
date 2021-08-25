@@ -98,7 +98,6 @@ locals {
       unauthenticated_client_action  = "RedirectToLoginPage"
       default_provider               = "AzureActiveDirectory"
       allowed_external_redirect_urls = []
-      active_directory               = null
     },
   var.auth_settings)
 
